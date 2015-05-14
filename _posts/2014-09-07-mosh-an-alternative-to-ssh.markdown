@@ -108,4 +108,4 @@ mosh root@192.169.0.100 --ssh="ssh -p 2222"
 
 For more details you can visit the MIT [official page](https://mosh.mit.edu/) of the Mosh project. Also, below you can see a presentation of Keith Winstein, the author of mosh project.
 
-<iframe width="420" height="315" src="https://youtu.be/XsIxNYl0oyU" frameborder="10" allowfullscreen> </iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XsIxNYl0oyU" frameborder="0" allowfullscreen></iframe>
