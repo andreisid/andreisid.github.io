@@ -8,3 +8,9 @@
 
 - title: VI 
   url: /vi/
+
+- title: Python
+  href: /python/
+  subcategories:
+    - subtitle: "ansible"
+      subhref: "/ansible/"
