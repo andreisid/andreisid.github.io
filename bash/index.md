@@ -1,7 +1,7 @@
 ---
 layout: page 
 title: Some Bash
-excerpt: "Compilation of useful commands"
+excerpt: "Bash commands"
 ---
 <style type="text/css">
 .tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
