@@ -5,7 +5,7 @@ date: 2014-11-07 09:21:14+00:00
 layout: post
 slug: teck-if-your-server-is-vulnerable-to-sslv3-poodle-attacks
 title: Is your server vulnerable to SSLv3 Poodle attacks?
-excerpt: "."
+excerpt: "Poodle vulnerability proof of concept"
 categories:
 - hack
 - linux
