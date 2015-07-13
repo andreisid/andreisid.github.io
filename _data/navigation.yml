@@ -11,6 +11,4 @@
 
 - title: Python
   url: /python/
-  subcategories:
-    - subtitle: "ansible"
-      subhref: "/ansible/"
+  
