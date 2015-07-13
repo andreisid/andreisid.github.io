@@ -12,6 +12,7 @@ excerpt: "VI Tips"
 </style>
 <table class="tftable" border="1">
 <tbody>
+<tr><th>Command</th><th>Description</th></tr>
 <tr><td>/</td><td>Search.n for next, N for previous</td></tr>
 <tr><td>?</td><td>Search backwards</td></tr>
 <tr><td>:%s/OLD/NEW/g</td><td>Replace all OLD with NEW</td></tr>
