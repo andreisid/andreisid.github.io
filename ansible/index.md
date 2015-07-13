@@ -1,5 +1,5 @@
 ---
 layout: page 
-title: Python quickreference
+title: Ansible quickreference
 excerpt: "Python quick reference"
 ---

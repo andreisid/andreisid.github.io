@@ -9,6 +9,8 @@
 - title: VI 
   url: /vi/
 
-- title: Python
-  url: /python/
+- title: Ansible
+  url: /ansible/
   
+- title: Docker
+  url: /docker/
