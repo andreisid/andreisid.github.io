@@ -41,7 +41,6 @@ excerpt: "VI Tips"
 
 <h3>.vimrc</h3>
 <br>
-<p>--------------------------</p>
 <table class="tftable" border="1">
 <tbody>
 <tr><th>Command</th><th>Description</th></tr>
