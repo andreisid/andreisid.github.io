@@ -5,7 +5,7 @@ date: 2014-09-07 16:21:26+00:00
 layout: post
 slug: mosh-an-alternative-to-ssh
 title: Mosh, an alternative to ssh
-excerpt: "This article presents Mosh, a great alternative to ssh for mobile clients, that supports intermittent connectivity."
+excerpt: "Mosh for intermittent ssh connectivity."
 categories:
 - administration
 - linux

@@ -5,7 +5,7 @@ date: 2014-08-28 20:29:40+00:00
 layout: post
 slug: compiling-kernel-for-centos-6
 title: Compiling Kernel 3.2.62 for CentOS 6.5
-excerpt: "For the sake of demonstration i have compiled Kernel 3.2.62 and installed it on a CentOS 6.5 VM running Kernel 2.6.32-431. Before starting the process make sure you have installed the required packages and they are up to date."
+excerpt: "How to compile Kernel for Centos"
 
 categories:
 - linux

@@ -5,7 +5,7 @@ date: 2014-11-07 09:21:14+00:00
 layout: post
 slug: teck-if-your-server-is-vulnerable-to-sslv3-poodle-attacks
 title: Is your server vulnerable to SSLv3 Poodle attacks?
-excerpt: "POODLE stands for Padding Oracle On Downgraded Legacy Encryption. This vulnerability allows a man-in-the-middle attacker to decrypt ciphertext using a padding oracle side-channel attack. More details are available in the upstream OpenSSL advisory."
+excerpt: "."
 categories:
 - hack
 - linux

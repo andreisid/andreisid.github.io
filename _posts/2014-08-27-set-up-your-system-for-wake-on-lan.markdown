@@ -5,7 +5,7 @@ date: 2014-08-27 17:35:43+00:00
 layout: post
 slug: set-up-your-system-for-wake-on-lan
 title: Set up your system for Wake on LAN
-excerpt: This is a quick tutorial on how to enable WOL on your your Linux machine.
+excerpt: Enable Wake on LAN.
 image:
   feature: feature-image-filename.jpg
   thumb: thumbnail-image.jpg 

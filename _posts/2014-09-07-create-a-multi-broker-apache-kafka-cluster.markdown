@@ -5,7 +5,7 @@ date: 2014-09-07 21:31:56+00:00
 layout: post
 slug: create-a-multi-broker-apache-kafka-cluster
 title: 'Create a distributed Apache Kafka cluster '
-excerpt: "How does it work? Simple. You have a messaging cluster, you have producers, you have subscribers and you have topics. In this article we will set up the cluster. Usually custom applications play the role of a subscriber and of a producer. Producers and subscribers communicate with each other by using the cluster and a common topic."
+excerpt: "Setup a Kafka Cluster"
 categories:
 - clusters
 - linux

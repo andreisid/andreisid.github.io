@@ -5,7 +5,7 @@ date: 2014-08-27 08:01:54+00:00
 layout: post
 slug: using-ssh-proxycommand
 title: 'Using  Ssh ProxyCommand '
-excerpt: "Sometimes I needed to login to servers that are not directly accesible from internet. So i needed to first login to a bastion server and from that bastion server to ssh into the target server. The solution described in this article takes advantage of shh ProxyCommand option and ControlMaster for keeping one tunnel for all ssh connections"
+excerpt: "shh ProxyCommand for tunneling all ssh connections"
 categories:
 - administration
 - linux
