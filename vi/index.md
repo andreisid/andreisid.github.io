@@ -35,10 +35,16 @@ excerpt: "VI Tips"
 <tr><td>CTRL+R</td><td>Redo</td></tr>
 <tr><td>:set paste</td><td>Set mode for pasting</td></tr>
 <tr><td>SHIFT + D</td><td>delete from cursor to end of line</td></tr>
+</tbody>
+</table>
 
 
-.vimrc
---------------------------
-:set tabstop=4      #one tab=4 spaces
-:set expandtab      #insert space even if pressed tab
+<h3>.vimrc</h3>
+<br>
+<p>--------------------------</p>
+<table class="tftable" border="1">
+<tbody>
+<tr><th>Command</th><th>Description</th></tr>
+<tr><td>:set tabstop=4</td><td>#one tab=4 spaces</td></tr>
+<tr><td>:set expandtab</td><td>#insert space even if pressed tab</td></tr>
 </tbody></table>
