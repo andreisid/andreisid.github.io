@@ -10,7 +10,7 @@
   url: /vi/
 
 - title: Python
-  href: /python/
+  url: /python/
   subcategories:
     - subtitle: "ansible"
       subhref: "/ansible/"
