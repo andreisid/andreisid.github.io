@@ -71,7 +71,7 @@ Note: You can add -nocerts to only output the private key or add -nokeys to only
 
 **7.Convert a PEM certificate and private key into a PKCS12**
 
-% highlight bash %}
+{% highlight bash %}
 openssl pkcs12 -export -out <certificate.pfx> -inkey <privateKey.key> -in <certificate.crt> -certfile <CACert.crt>
 {% endhighlight %}
 
