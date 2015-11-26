@@ -111,3 +111,10 @@ openssl s_server -accept 443 -cert <server-cert.pem> -pass pass:<pass> -WWW -sta
 {% highlight bash %}
 openssl s_server -accept 443 -cert <server-cert>.pem -pass pass:<pass> -WWW -state -msg -tlsextdebug -CAfile <truststore.pem> -Verify 1
 {% endhighlight %}
+
+**14.Import a .pem certificate to a JKS truststore**
+{% highlight bash %}
+openssl x509 -outform der -in cert.pem -out cert.der
+keytool -import -alias cert.alias -keystore truststore -file cert.der
+{% endhighlight %}
+
