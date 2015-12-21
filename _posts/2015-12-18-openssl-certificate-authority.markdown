@@ -207,7 +207,7 @@ chmod 444 intermediate/certs/ca-chain.cert.pem
 
 #Create a new certificate signed by the IntermediateCA
 
-###1Create a certificate private key
+###1. Create a certificate private key
       
 {% highlight bash %}
 cd /root/ca
