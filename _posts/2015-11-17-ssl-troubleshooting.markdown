@@ -10,6 +10,7 @@ categories:
 - ssl
 - linux
 - security
+- certificates
 ---
 
 {% include _toc.html %}
