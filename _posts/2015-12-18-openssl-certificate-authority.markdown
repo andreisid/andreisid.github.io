@@ -205,12 +205,44 @@ chmod 444 intermediate/certs/ca-chain.cert.pem
 {% endhighlight %}
 
 
+#Create a new certificate signed by the IntermediateCA
 
+###1Create a certificate private key
       
 {% highlight bash %}
+cd /root/ca
+openssl genrsa -aes256 \
+      -out intermediate/private/www.example.com.key.pem 2048
+chmod 400 intermediate/private/www.example.com.key.pem
 {% endhighlight %}
-      
+
+###2. Create a cert request and sign it
+
 {% highlight bash %}
+cd /root/ca
+openssl req -config intermediate/openssl.cnf \
+      -key intermediate/private/www.example.com.key.pem \
+      -new -sha256 -out intermediate/csr/www.example.com.csr.pem
+
+openssl ca -config intermediate/openssl.cnf \
+      -extensions server_cert -days 375 -notext -md sha256 \
+      -in intermediate/csr/www.example.com.csr.pem \
+      -out intermediate/certs/www.example.com.cert.pem
+chmod 444 intermediate/certs/www.example.com.cert.pem
 {% endhighlight %}
-      
+
+* Note: new server/client certificates will be signed by the IntermediateCA. 
+* "extensions server_cert" is used for creating a server certificate, you can use "extensions usr_cert" for user certificates.
+
+###3. Verify the certificate
+
+{% highlight bash %}
+openssl verify -CAfile intermediate/certs/ca-chain.cert.pem \
+      intermediate/certs/www.example.com.cert.pem
+
+www.example.com.cert.pem: OK
+{% endhighlight %}
+*Note: this will verify the certificate against the certificate chain we've created before
+
+
 
