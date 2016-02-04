@@ -10,7 +10,7 @@ url:              http://devopsjournal.org
 
 permalink:   /:year/:month/:title.html
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
