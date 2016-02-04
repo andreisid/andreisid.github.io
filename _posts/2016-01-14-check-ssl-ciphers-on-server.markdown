@@ -22,7 +22,7 @@ categories:
 ![cipher](/images/cipher-275*183.jpg)
 </div>
 
-#1. Check against Client ciphers
+# 1. Check against Client ciphers
 
  The below one-line command checks the list of ciphers that are installed both on the server and the client. 
 The client is where you run the command from. 
@@ -39,7 +39,7 @@ if [[ "$result" =~ ":error:" ]] ; then echo "NO - $i"; else echo "YES - $i"; fi;
 
 - Output semnification: NO means that the cipher is not found on the server, YES means the cipher is supported by the server
 
-#2. Check against ciphers read from file
+# 2. Check against ciphers read from file
 
 The below command will read file.txt and will check which of the SSL ciphers from that file are installed on the server.
 
