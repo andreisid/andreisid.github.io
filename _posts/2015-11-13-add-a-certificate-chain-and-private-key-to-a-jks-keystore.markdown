@@ -23,7 +23,7 @@ Not long time ago i needed to change a certificate that expired on a tomcat webs
 I will describe below the steps to create a valid java keystore.
 
 
-##1. Split your .pem file so you have a different file for the certificate, PK, Root certificate and intermidiate certificates
+## 1. Split your .pem file so you have a different file for the certificate, PK, Root certificate and intermidiate certificates
 In my case this resulted in 5 files:
 
 {% highlight bash %}
@@ -36,7 +36,7 @@ In my case this resulted in 5 files:
 
 You might not have the root and intermidiate certificates, as they might be specified in a separate trustore. If thats the case please skip steps 2/3/4
 
-##2. Import Root and intermidiate certificates to your keystore:
+## 2. Import Root and intermidiate certificates to your keystore:
 You will be asked for a passkey to protect your new keystore. Please enter twice your desired key.Also confirm  you want to add the cert to your keystore by typing "yes" and ENTER:
 {% highlight bash %}
 keytool -import -trustcacerts -alias root -file root.pem -keystore keystore.jks
@@ -62,7 +62,7 @@ keytool -import -trustcacerts -alias intermidiate2 -file inter2.pem -keystore ke
 {% endhighlight %}
 
 
-##3. Create a .p12 keystore containing your leaf certificate and private key
+## 3. Create a .p12 keystore containing your leaf certificate and private key
 You will need to specify your PK password. this is usually provided by your certificate provider and might not be set.
 Also you will need to enter and confirm your .p12 keystore password. 
 
@@ -88,7 +88,7 @@ openssl pkcs12 -info -in keystore.p12
     -Verifying - Enter PEM pass phrase:
 {% endhighlight %}
 
-##4. Import your .p12 content to your .jks keystore
+## 4. Import your .p12 content to your .jks keystore
 
 You will be propted for the .p12 and .jks passwords.
 
@@ -99,7 +99,7 @@ keytool -importkeystore -destkeystore keystore.jks -srckeystore keystore.p12 -sr
     -Enter source keystore password:  
 {% endhighlight %}
 
-##5. Verify the content of yout jks keystore
+## 5. Verify the content of yout jks keystore
 
 {% highlight bash %}
 
