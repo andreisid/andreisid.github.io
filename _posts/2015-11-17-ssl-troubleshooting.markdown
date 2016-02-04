@@ -21,15 +21,15 @@ See below a list of commands, commonly used when working with certificates and t
 </div>
 
 
-##Read certificates##
+# Read certificates
 
-**1. Read a PEM certificate**
+### 1. Read a PEM certificate
 
 {% highlight bash %}
 openssl x509 -in certificate.pem -text -noout
 {% endhighlight %}
 
-**2. Read a PFX/P12 certificate**
+### 2. Read a PFX/P12 certificate
 
 {% highlight bash %}
 keytool -list -v -keystore <keystore.pfx> -storetype PKCS12 -storepass <pass>
@@ -37,7 +37,7 @@ openssl pkcs12 -info -in <keyStore.pfx>
 {% endhighlight %}
 
 
-**3. Read a JKS Keystore**
+### 3. Read a JKS Keystore
 
 {% highlight bash %}
 keytool -list -v -keystore <keystore.jks> -storetype JKS -storepass <pass>
@@ -47,22 +47,22 @@ Note: depending on the "Entry type" field of each entry (PrivateKeyEntry or trus
 A truststore would only contain trustedCertEntry entries
 
 
-##Convert certificates##
+# Convert certificates
 
-**4.Convert a JKS into a PKCS12 (all aliases)**
+### 4.Convert a JKS into a PKCS12 (all aliases)
 
 {% highlight bash %}
 keytool -importkeystore -srckeystore <keystore.jks> -srcstoretype JKS -deststoretype PKCS12 -destkeystore <keystore.p12>
 {% endhighlight %}
 
-**5.Converting a JKS into a PKCS12 (only one alias)**
+### 5.Converting a JKS into a PKCS12 (only one alias)
 
 {% highlight bash %}
 keytool -importkeystore -srckeystore <keystore.jks> -destkeystore <keystore.p12> -srcstoretype JKS -deststoretype PKCS12 -srcstorepass 
 <pass> -deststorepass <pass> -srcalias <alias> -destalias <alias> -srckeypass <keypass> -destkeypass <keypass> -noprompt
 {% endhighlight %}
 
-**6.Convert a PKCS12 into a PEM (with password)**
+### 6.Convert a PKCS12 into a PEM (with password)
 
 {% highlight bash %}
 openssl pkcs12 -in <cert.pfx> -out <cert.pem>
@@ -70,50 +70,50 @@ openssl pkcs12 -in <cert.pfx> -out <cert.pem>
 
 Note: You can add -nocerts to only output the private key or add -nokeys to only output the certificates.
 
-**7.Convert a PEM certificate and private key into a PKCS12**
+### 7.Convert a PEM certificate and private key into a PKCS12
 
 {% highlight bash %}
 openssl pkcs12 -export -out <certificate.pfx> -inkey <privateKey.key> -in <certificate.crt> -certfile <CACert.crt>
 {% endhighlight %}
 
 
-**8.Convert PEM to DER**
+### 8.Convert PEM to DER
 {% highlight bash %}
 openssl x509 -in <cert.pem> -inform PEM -out <cert.der> -outform DER
 {% endhighlight %}
 
-**9.Convert DER to DER**
+### 9.Convert DER to DER
 {% highlight bash %}
 openssl x509 -inform der -in <certificate.cer> -out certificate.pem
 {% endhighlight %}
 
 #Troubleshooting##
 
-**10.Read a cert from a remote host**
+### 10.Read a cert from a remote host
 
 {% highlight bash %}
 echo QUIT | openssl s_client -connect <domain.com:443>
 {% endhighlight %}
 
-**11.Simulate a client**
+### 11.Simulate a client
 
 {% highlight bash %}
 openssl s_client -connect <domain.com:443> -showcerts -state -msg
 openssl s_client -connect <domain.com:443> -showcerts -state -msg -CAfile <truststore.pem>
 {% endhighlight %}
 
-**12.Simulate a server clientAuth=False**
+### 12.Simulate a server clientAuth=False
 
 {% highlight bash %}
 openssl s_server -accept 443 -cert <server-cert.pem> -pass pass:<pass> -WWW -state -msg -tlsextdebug
 {% endhighlight %}
 
-**13.Simulate a server clientAuth=False**
+### 13.Simulate a server clientAuth=False
 {% highlight bash %}
 openssl s_server -accept 443 -cert <server-cert>.pem -pass pass:<pass> -WWW -state -msg -tlsextdebug -CAfile <truststore.pem> -Verify 1
 {% endhighlight %}
 
-**14.Import a .pem certificate to a JKS truststore**
+### 14.Import a .pem certificate to a JKS truststore
 {% highlight bash %}
 openssl x509 -outform der -in cert.pem -out cert.der
 keytool -import -alias cert.alias -keystore truststore -file cert.der
