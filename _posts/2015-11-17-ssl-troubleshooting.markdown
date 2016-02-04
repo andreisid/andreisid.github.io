@@ -87,7 +87,7 @@ openssl x509 -in <cert.pem> -inform PEM -out <cert.der> -outform DER
 openssl x509 -inform der -in <certificate.cer> -out certificate.pem
 {% endhighlight %}
 
-#Troubleshooting##
+# Troubleshooting
 
 ### 10.Read a cert from a remote host
 
