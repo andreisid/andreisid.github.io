@@ -23,7 +23,7 @@ POODLE affects older standards of encryption, specifically Secure Socket Layer (
 In order to test if your servers are vulnerable to SSLv3 Poodle attacks please see the below commands:
 
 
-##1-way-ssl
+## 1-way-ssl
 
 
 {% highlight bash %}
@@ -42,7 +42,7 @@ You should se some relevant output like: "SSL peer handshake failed" if you cann
 On the other hand, if you see huge chuck of data on the output, or something like: "SSL handshake has read 8349 bytes and written 2375 bytes" that means that you are vulnerable.
 
 
-##2-way-ssl
+## 2-way-ssl
 
 
 {% highlight bash %}
@@ -59,7 +59,7 @@ You should see some big output containg certificate exchange and a handshake suc
 
 
 
-##How to fix?
+## How to fix?
 
 
 Depending on what webserver you ar running, you need to disable the use of SSLv3.
