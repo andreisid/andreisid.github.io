@@ -17,7 +17,7 @@ Centos 6 comes with Kernel 2.x installed by default. Sometimes compiling the new
 For the sake of demonstration i have compiled Kernel 3.2.62 and installed it on a CentOS 6.5 VM running Kernel 2.6.32-431. Before starting the process make sure you have installed the required packages and they are up to date.
 
 
-##Install dependencies
+## Install dependencies
 
 
 For the compiling kernel please make sure you vahe the following packages installed: **gcc ncurses ncurses-devel**. You can use command: rpm -qa|grep <pckage> to check it. If you are missing them go ahead and install the,
@@ -27,7 +27,7 @@ yum install gcc ncurses ncurses-devel
 yum update
 {% endhighlight %}
 
-##Download Kernel 3.2.62 
+## Download Kernel 3.2.62 
 
 [download link](https://www.kernel.org/)
 
@@ -38,7 +38,7 @@ In this step you will download an archive containing the Kernel sources from ker
 [localhost]# wget https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.2.62.tar.xz
 {% endhighlight %}
 
-##Extract the archive
+## Extract the archive
 
 I'm using tar utility , but you can use anything you are confortable with: mc, graphical tools,...
 
@@ -47,7 +47,7 @@ tar xf linux-3.2.62.tar.xz
 cd /tmp/linux-3.2.62
 {% endhighlight %}
 
-##Configuring Kernel 3.2.62 sources
+## Configuring Kernel 3.2.62 sources
 
 You have a couple of different ways to configure the Kernel
 
@@ -78,7 +78,7 @@ make defconfig
 
 Your best option here would be the second one: **make oldconfig**, because if you know what you are doing, and you are using **make menuconfig** you are probably not following up on this tutorial.
 
-##Compiling the Kernel
+## Compiling the Kernel
 
 Next command will start the compilation of Kernel 3.2.62, which may take up to 30 minutes, depending on how performat your system is.
 
@@ -88,7 +88,7 @@ make
 
 You will see a lot of output on the screen, it should be done when you get your prompt back. Please note that on that output you might see some warnings, the don't necessarily mean that your new Kernel will not work.
 
-##Installing the Kernel
+## Installing the Kernel
 
 If all the previous steps ran successfully, you are now ready to start the installation proccess. The below command will create a couple of files under /boot folder and make a new Kernel entry in your grub.conf file. As the command says, you will install both the Kernel modules and the Kernel itself.
 
@@ -98,7 +98,7 @@ make modules_install install
 
 After this is done you have a new Kernel installed. It's time for you to reboot the system and a new entry should appear in the grub menu. **If the system does not boot and you get a Kernel panic message, then probably the configuration you have selected if not suitable for the system. If this is the case, reboot again and choose the old Kernel from the grub menu to start again.**
 
-##Check you new Kernel
+## Check you new Kernel
 
 If all went well you should see your new Kernel installed when running the following command.
 
