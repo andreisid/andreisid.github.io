@@ -28,7 +28,7 @@ ssh user@bastion
 ssh user@server
 {% endhighlight %}
 
-##Problem
+## Problem
 After a while i got sick of running 2 commands every time and enter my password twice.As a security best practice bastion servers usually use a 2-way-authentication method. That was my case also, so imagine every time i had  to generate a one-time password on my phone, ssh to the bastion server using that+PIN and from there ssh to the target server using my user's password. Doesn't sound much work, but when you have to do this simultaneously to 20 servers it becomes very annoying.
 
 ## Solution
