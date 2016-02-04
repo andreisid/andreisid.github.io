@@ -23,10 +23,10 @@ This is a quick tutorial on how to enable WOL on your your Linux machine.I know 
 ![wifi_icons-black2](/images/wifi-150x150.png)
 </div>
 
-##Bios setup
+## Bios setup
 If you havent already, go to your BIOS, and turn on WakeOnLAN. Be aware, not all motherboards support WOL 
 
-##Network setup
+## Network setup
 Find your network device that you will use. Most of the times it will be eth0.
 
 {% highlight bash %}
@@ -49,7 +49,7 @@ TX packets 13086 bytes 21831329 (20.8 MiB)
 TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0
 {% endhighlight %}
 
-##Startup script
+## Startup script
 Create a new startup script. You need to be **root** or use **sudo**.
 
 {% highlight bash %}
@@ -63,7 +63,7 @@ ethtool -s eth0 wol g
 exit
 {% endhighlight %}
 
-##Run at boot
+## Run at boot
 Make the script executable and make sure it runs at startup. Depending on your distribution there are various ways to make it run at boot. I am using update-rc.d for this example, but it could be chkconfig ...
 
 {% highlight bash %}
@@ -80,7 +80,7 @@ Adding system startup for /etc/init.d/wakeonlan ...
 /etc/rc5.d/S20wakeonlan -> ../init.d/wakeonlan
 {% endhighlight %}
 
-##Test the script
+## Test the script
 Next run the script and make sure you don't have any errors. Make sure you note down the mac address of the network device.
 You cand see it in the output of ifconfig command or ping the server from another computer and check the arp table: **arp**
 
@@ -88,7 +88,7 @@ You cand see it in the output of ifconfig command or ping the server from anothe
 /etc/init.d/wakeonlan
 {% endhighlight %}
 
-##Wake computer
+## Wake computer
 You can now shut down the server and wake it up from another computer using wakeonlan. You can find **wakeonlan **tool on almost any distribution repository(apt-get install wakeonlan -y ...)
 
 {% highlight bash %}
