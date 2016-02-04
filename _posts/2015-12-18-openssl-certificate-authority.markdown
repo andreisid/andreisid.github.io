@@ -30,7 +30,7 @@ You can act as your own Certificate Authority on some cases and create your own 
 
 # Create the RootCA PK and certificate
 
-###1. Set up directory structure 
+### 1. Set up directory structure 
 
 {% highlight bash %}
 mkdir /root/ca
@@ -45,11 +45,11 @@ echo 1000 > serial
 * crl will contain certification revocation lists
 * private will contain the private keys
 
-###2. Set up config file 
+### 2. Set up config file 
 
 You can find [here](https://github.com/andreisid/dummyCA/blob/master/opensslRootCA.cnf) a sample configuration file. Save it as /root/ca/openssl.cnf, it will be used later
 
-###3. Create RootCA private key
+### 3. Create RootCA private key
 
 {% highlight bash %}
 cd /root/ca
@@ -63,7 +63,7 @@ chmod 400 private/ca.key.pem
 
 * omitting aes256 will not set a password on your PK. It is NOT recommended on RootCA or IntermediateCA PK
 
-###4. Create the RootCA certificate
+### 4. Create the RootCA certificate
 {% highlight bash %}
 cd /root/ca
 
@@ -91,7 +91,7 @@ chmod 444 certs/ca.cert.pem
 * extensions v3_ca specifies the extension from openssl.conf to be used
 * set to expire after 20 years. CAs usually have a long expiry period
 
-###5. Verify the RootCA certificate
+### 5. Verify the RootCA certificate
 {% highlight bash %}
 openssl x509 -noout -text -in certs/ca.cert.pem
 {% endhighlight %}
@@ -103,7 +103,7 @@ openssl x509 -noout -text -in certs/ca.cert.pem
 
 An intermediate certificate is signed by the root certificate and it expires faster than the RootCA.
 
-###1. Setting up dir structure
+### 1. Setting up dir structure
 
 {% highlight bash %}
 mkdir /root/ca/intermediate
@@ -118,11 +118,11 @@ echo 1000 > /root/ca/intermediate/crlnumber
 
 * crlnumber is used for tracking certificate revocation lists
 
-###2. Set up config file 
+### 2. Set up config file 
 
 You can find [here](https://github.com/andreisid/dummyCA/blob/master/opensslRootCA.cnf) a sample configuration file. Save it as /root/ca/intermediate/openssl.cnf, it will be used later
 
-###3. Create the IntermediateCA private key
+### 3. Create the IntermediateCA private key
 
 {% highlight bash %}
 cd /root/ca
@@ -136,7 +136,7 @@ chmod 400 intermediate/private/intermediate.key.pem
 {% endhighlight %}
 
 
-###4. Create the IntermediateCA certificate
+### 4. Create the IntermediateCA certificate
 
 Creating an intermediate certificate consists in 2 steps:
 
@@ -165,7 +165,7 @@ Common Name []:Alice Ltd Intermediate CA
 Email Address []:
 {% endhighlight %}
 
-##### 4.a Create the certificate
+##### 4.b Create the certificate
 
 {% highlight bash %}
 cd /root/ca
@@ -180,7 +180,7 @@ Sign the certificate? [y/n]: y
 chmod 444 intermediate/certs/intermediate.cert.pem
 {% endhighlight %}
 
-###5. Verify the Intermediate certificate
+### 5. Verify the Intermediate certificate
 
 {% highlight bash %}
 openssl x509 -noout -text \
@@ -196,7 +196,7 @@ intermediate.cert.pem: OK
 {% endhighlight %}
 * this verifies IntermediateCA against the RootCA
 
-###6. Create the certificate chain
+### 6. Create the certificate chain
 
 {% highlight bash %}
 cat intermediate/certs/intermediate.cert.pem \
@@ -205,9 +205,9 @@ chmod 444 intermediate/certs/ca-chain.cert.pem
 {% endhighlight %}
 
 
-#Create a new certificate signed by the IntermediateCA
+# Create a new certificate signed by the IntermediateCA
 
-###1. Create a certificate private key
+### 1. Create a certificate private key
       
 {% highlight bash %}
 cd /root/ca
@@ -216,7 +216,7 @@ openssl genrsa -aes256 \
 chmod 400 intermediate/private/www.example.com.key.pem
 {% endhighlight %}
 
-###2. Create a cert request and sign it
+### 2. Create a cert request and sign it
 
 {% highlight bash %}
 cd /root/ca
@@ -234,7 +234,7 @@ chmod 444 intermediate/certs/www.example.com.cert.pem
 * Note: new server/client certificates will be signed by the IntermediateCA. 
 * "extensions server_cert" is used for creating a server certificate, you can use "extensions usr_cert" for user certificates.
 
-###3. Verify the certificate
+### 3. Verify the certificate
 
 {% highlight bash %}
 openssl verify -CAfile intermediate/certs/ca-chain.cert.pem \
