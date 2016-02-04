@@ -19,7 +19,7 @@ As the official page of Apache Kafka sais: "Kafka is a distributed, partitioned,
 ![kafka](/images/kafka-300x157.jpg)
 </div>
 
-##Introduction
+## Introduction
 
 
 In most enterprise systems, where you have at least a couple of application servers, where backend is separated from frontend, you will need to ensure a flowless communication between all components. One option is to use a messaging system like Kafka.
@@ -33,7 +33,7 @@ In the below picture, brokers are actually Kafka servers running on different VM
 I have set up a 2 broker Kafka system, every broker will be installed on it's own Centos6.5 VM.
 
 
-##Prerequisite
+## Prerequisite
 
 	
   * Set up 2 VMS, it can be Virtualbox, Vmware, AWS, ... anything you chose as long as you make sure the virtual machines can communicate with each other. If you want to play around with kafka the fastest way is to create the environment is by using vagrant and virtualbox.We will call the 2 centos servers: **kafka1** and **kafka2**, each server reprezenting a broker.
@@ -75,7 +75,7 @@ yum -y install java-1.7.0-openjdk
 {% endhighlight %}
 
 
-##Installing kafka 
+## Installing kafka 
 
   * Download kafka binaries and extract them. I am using my home directory for this but you can you /usr/local for example.
 
@@ -147,7 +147,7 @@ bin/kafka-server-start.sh config/server.properties
 {% endhighlight %}
 
 
-##Testing you messinging system
+## Testing you messinging system
 
 	
   * First you need to make sure you have your services running. You will have ports 9092, 2181 opened on kafka1 VM and port 9092 on kafka2 VM
