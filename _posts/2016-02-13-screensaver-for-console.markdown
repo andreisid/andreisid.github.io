@@ -5,7 +5,7 @@ date: 2016-02-13 17:00:00+00:00
 layout: post
 slug: screensaver-for-console
 title: Screensaver for Console
-excerpt: "Screensaver for Console"
+excerpt: "Set up a nice looking screensaver for your Linux Console"
 categories:
 - linux
 - bash
