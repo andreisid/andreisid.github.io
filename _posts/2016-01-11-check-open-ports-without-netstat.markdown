@@ -5,7 +5,7 @@ date: 2016-01-11 15:01:00+00:00
 layout: post
 slug: check-open-ports-without-netstat 
 title: Check open ports without netstat
-excerpt: "Check open ports without netstat"
+excerpt: "Cool command to verify open ports without netstat"
 categories:
 - ssl
 - linux
