@@ -17,6 +17,9 @@ categories:
 
 ## Command
 
+Note: The below command shown ALL opened ports on a Linux machine, not only ports that are awaiting connection(LISTENING).
+This includes random high-number souce ports assigned locally when a conection is established with a remote server(ESTABLISHED). 
+
 {% highlight bash %}
 declare -a array=($(tail -n +2 /proc/net/tcp | cut -d":" -f"3"|cut -d" " -f"1")) && \
 for port in ${array[@]}; do echo $((0x$port)); done
