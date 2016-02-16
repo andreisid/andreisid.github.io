@@ -17,7 +17,7 @@ categories:
 
 ## Command
 
-Note: The below command shown ALL opened ports on a Linux machine, not only ports that are awaiting connection(LISTENING).
+######Note: The below command shows ALL opened ports on a Linux machine, not only ports that are awaiting connection(LISTENING).
 This includes random high-number souce ports assigned locally when a conection is established with a remote server(ESTABLISHED). 
 
 {% highlight bash %}
