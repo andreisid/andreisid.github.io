@@ -5,7 +5,7 @@ date: 2016-01-14 15:01:00+00:00
 layout: post
 slug: check-ssl-ciphers-on-server 
 title: Check SSL ciphers on server
-excerpt: "Check SSL ciphers on server"
+excerpt: "Verify what SSL ciphers are available on a remote server"
 categories:
 - ssl
 - linux

@@ -5,7 +5,7 @@ date: 2015-11-17 16:17:00+00:00
 layout: post
 slug: ssl-troubleshooting 
 title: SSL troubleshooting
-excerpt: "ssl-troubleshooting"
+excerpt: "Bunch of commands when working whith SSL certificates"
 categories:
 - ssl
 - linux

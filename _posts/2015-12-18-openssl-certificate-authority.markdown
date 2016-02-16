@@ -5,7 +5,7 @@ date: 2015-12-18 15:01:00+00:00
 layout: post
 slug: openssl-certificate-authority 
 title: OpenSSL Certificate Authority
-excerpt: "OpenSSL-certificate-authority"
+excerpt: "Create a loca certificate authority with OpenSSL"
 categories:
 - ssl
 - linux
