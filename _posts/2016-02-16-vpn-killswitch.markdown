@@ -36,7 +36,7 @@ apt-get install ufw
 
 # 2. Connect to your VPN
 
-Please follow your VPN provider's intructions on connecting to the VPN. Note down the ip address for the VPN gateway as you will use it later. You can use either the command line or the Network-Manager applet for connecting to your vpn. 
+Please follow your VPN provider's intructions on connecting to the VPN. Note down the ip address for the VPN gateway as you will use it later. You can use either the command line or the Network-Manager applet for connecting to your vpn. </br>
 **Please also make sure you use an IP for the VPN gateway when saving your OpenVPN configuration file. DNS resolution will not be allowed through the regular interface to avoid DNS leakung.** 
 
 
