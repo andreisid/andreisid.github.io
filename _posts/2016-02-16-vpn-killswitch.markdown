@@ -1,7 +1,7 @@
 ---
 author: andrei
 comments: true
-date: 2016-02-16 17:00:00+00:00
+date: 2016-02-16 17:00:00 +0200
 layout: post
 slug: vpn-killswitch
 title: VPN Killswitch
