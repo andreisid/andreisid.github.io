@@ -7,7 +7,7 @@ url:              http://devopsjournal.org
 
 
 # Jekyll configuration
-
+future: true
 permalink:   /:year/:month/:title.html
 markdown:    kramdown
 highlighter: rouge
