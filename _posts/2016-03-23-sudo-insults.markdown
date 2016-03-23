@@ -16,7 +16,7 @@ categories:
 {% include _toc.html %}
 
 There is a list of insults preinstalled on any linux system. You can get the os to insult you when misstyping the sudo password.
-In order to enable the feature enable the following in sudoers file
+In order to enable the feature add the following in sudoers file
 
 {% highlight bash %}
 sudo visudo
@@ -28,7 +28,7 @@ Default    insults
 {% endhighlight %}
 
 Now, open a new terminal window and  try "sudo su ", followed by a wrong password.
-you will see something like this:
+You will see something like this:
 
 {% highlight bash %}
 
