@@ -19,7 +19,7 @@ categories:
 
  This post shows how to check installed SSL ciphers on a remote server by taking advatage of OpenSSL library.
 <div style="text-align:center" markdown="1">
-![cipher](/images/cipher-275x183.jpg)
+![ssl cipher](/images/cipher-275x183.jpg)
 </div>
 
 # 1. Check against Client ciphers
