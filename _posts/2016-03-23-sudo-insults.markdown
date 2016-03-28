@@ -17,7 +17,7 @@ categories:
 
 
 <div style="text-align:center" markdown="1">
-![matrix](/images/insults-225x225.jpg)
+![sudo insults](/images/insults-225x225.jpg)
 </div>
 
 There is a list of insults preinstalled on any linux system. You can get the os to insult you when misstyping the sudo password.
