@@ -20,7 +20,7 @@ tags:
 Sometimes I needed to login to servers that are not directly accesible from internet. So i needed to first login to a bastion server and from that bastion server to ssh into the target server. The solution described in this article takes advantage of shh ProxyCommand option and ControlMaster for keeping one tunnel for all ssh connections.
 
 <div style="text-align:center" markdown="1">
-![ssh](/images/ssh-150x150.png)
+![ssh proxy](/images/ssh-150x150.png)
 </div>
 
 {% highlight bash %}
