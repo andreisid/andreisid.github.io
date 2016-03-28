@@ -22,7 +22,7 @@ You can set up your own killswitch system on a Linux machine by following the be
 
 
 <div style="text-align:center" markdown="1">
-![killswitch](/images/killswitch-300x225.png)
+![vpn killswitch](/images/killswitch-300x225.png)
 </div>
 
 # 1. Make sure you have ufw and iptables installed
