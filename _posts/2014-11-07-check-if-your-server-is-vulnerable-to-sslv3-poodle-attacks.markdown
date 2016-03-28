@@ -16,7 +16,7 @@ POODLE stands for Padding Oracle On Downgraded Legacy Encryption. This vulnerabi
 POODLE affects older standards of encryption, specifically Secure Socket Layer (SSL) version 3. It does not affect the newer encryption mechanism known as Transport Layer Security (TLS).
 
 <div style="text-align:center" markdown="1">
-![poodle](/images/poodle-300x286.jpg)
+![poodle vulnerability](/images/poodle-300x286.jpg)
 </div>
 
 
