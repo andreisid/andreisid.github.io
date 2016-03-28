@@ -59,7 +59,7 @@ make menuconfig
 
 A screen will pop-up, and you can select/unselect what options you need enabled. You will need to know what you are doing in order for the new Kernel to work with your sysyem
 
-![menuconfig](/images/menuconfig.png)
+![kernel compile](/images/menuconfig.png)
 
 	
   * If you like to configure the Kernel with your old configuration then type the below command.
