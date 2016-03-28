@@ -17,7 +17,7 @@ categories:
 See below a list of commands, commonly used when working with certificates and troubleshooting SSL.
 
 <div style="text-align:center" markdown="1">
-![poodle](/images/digital-certificate-300x250.png)
+![ssl certificate](/images/digital-certificate-300x250.png)
 </div>
 
 
