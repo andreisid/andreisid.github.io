@@ -19,7 +19,7 @@ You just need to setup screen utility and the cmatrix screensaver. See below det
 
 
 <div style="text-align:center" markdown="1">
-![matrix](/images/matrix-500x257.png)
+![matrix teminal screensaver](/images/matrix-500x257.png)
 </div>
 
 # 1. Install screen utility and screensavers
