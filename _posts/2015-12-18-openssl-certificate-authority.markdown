@@ -21,7 +21,7 @@ Certificate Authorities are entities that sign virtual certificates. Verisign or
 You can act as your own Certificate Authority on some cases and create your own CA for certificate management. This can be be done easily by using OpenSSL and it is best to implement on intranet systems.
 
 <div style="text-align:center" markdown="1">
-![poodle](/images/certificate-authority-590x250.jpg)
+![openssl certificate authority](/images/certificate-authority-590x250.jpg)
 </div>
 
 
