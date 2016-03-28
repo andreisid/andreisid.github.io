@@ -20,7 +20,7 @@ categories:
 This is a quick tutorial on how to enable WOL on your your Linux machine.I know that cloud has been out there for a while now, there are lots of cheap or even free processing providers, but if you ever need to use your own old PC as a remote server this is something you will be interested in. Why use your PC as a server? Because it doesn't cost you anything and you can configure it any way you want. Also there is no need to leave it ON, you can always start it remotely using WOL. **Please note that wol does not work with wireless, with some exceptions(very rare).**
 
 <div style="text-align:center" markdown="1">
-![wifi_icons-black2](/images/wifi-150x150.png)
+![wake on lan](/images/wifi-150x150.png)
 </div>
 
 ## Bios setup
