@@ -16,7 +16,7 @@ Not long time ago i needed to change a certificate that expired on a tomcat webs
 
 
 <div style="text-align:center" markdown="1">
-![poodle](/images/ssl-certificate-220x220.png)
+![ssl certificate](/images/ssl-certificate-220x220.png)
 </div>
 
 

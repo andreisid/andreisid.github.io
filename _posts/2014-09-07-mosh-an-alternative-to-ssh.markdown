@@ -17,7 +17,7 @@ This article presents Mosh, a great alternative to ssh for mobile clients, that 
 Mosh takes advantege of ssh functionality but provides better user experience in situations when clients move a lot, change ips or have a low badwidth internet connection. When the connection to the remote server is lost SSH will freeze, mosh will not!
 
 <div style="text-align:center" markdown="1">
-![mosh](/images/mosh.jpg)
+![ssh alternative](/images/mosh.jpg)
 </div>
 
 Mosh is a product of MIT research and uses SSP(State Synchronization Protocol), a protocol based on UDP. In comparrison to SSH which uses TCP, this is what makes it faster.

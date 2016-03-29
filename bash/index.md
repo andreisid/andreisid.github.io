@@ -18,4 +18,17 @@ excerpt: "Bash commands"
 <tr><td>cat << 'EOF'|tee input.sh|bash </td><td>Run commands on separate lines and also add them to script</td></tr>
 <tr><td>pkill [part_of_process_name]</td><td>Kills the processes named part_of_process_name even if its not the full name</td></tr>
 <tr><td>shopt -s cdspell</td><td>You can change directory even if you misspell the name</td></tr>
-<tr><td>cat << EOF >> file.txt</td><td>Start writing a file line by line until you enter EOF</td></tr><ttbody></table>
+<tr><td>cat << EOF >> file.txt</td><td>Start writing a file line by line until you enter EOF</td></tr>
+<tr><td>curl wttr.in/london</td><td>Wheather in terminal</td></tr>
+<tr><td>path=${1?Error argument..}</td><td>Path receives first argument passed to the script, or Error of no argument</td></tr>
+<tr><td>ls *.{sh,py}</td><td>List all shell and python scripts</td></tr>
+<tr><td>tr -dc A-Za-z0-9_ < /dev/urandom |head -c12|xargs</td><td>Generate random password</td></tr>
+<tr><td>bash | lolcat -a -s 250</td><td>Make your terminal interactive and fun</td></tr>
+<tr><td>cat <<EOF > index.html</td><td>Write to file directly from bash</td></tr>
+<tr><td>hping3 -c 1 -s 123 -p 80 -S <ip> </td><td>Send one TCP SYN to <ip>:80 from source port 123</td></tr>
+<tr><td>ping 0|while read a; do echo `date +%T` $a; done</td><td>Add date in front of a ping</td></tr>
+<tr><td>crtl+a	</td><td>Go to begining of the line</td></tr>
+<tr><td>crtl+e	</td><td>Go to end of the line</td></tr>
+<tr><td>lsof -i -Pn	</td><td>Listening and established connections</td></tr>
+
+<ttbody></table>
