@@ -99,6 +99,8 @@ keytool -importkeystore -destkeystore keystore.jks -srckeystore keystore.p12 -sr
     -Enter source keystore password:  
 {% endhighlight %}
 
+NOTE: Youa can add many certivicates+private keys (PrivateKeyEntries) into a jks keystore. To do so, create more p12 keystores and import them in you jks keystore
+
 ## 5. Verify the content of yout jks keystore
 
 {% highlight bash %}
