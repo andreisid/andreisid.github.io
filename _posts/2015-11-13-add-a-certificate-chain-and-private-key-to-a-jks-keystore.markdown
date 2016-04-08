@@ -100,7 +100,7 @@ keytool -importkeystore -destkeystore keystore.jks -srckeystore keystore.p12 -sr
 {% endhighlight %}
 
     NOTE: You can add many certificates + private keys (PrivateKeyEntries) into a jks 
-    keystore. To do so, create more p12 keystores and import them into you jks keystore.
+    keystore, but it might not work when reading them.
 
 ## 5. Verify the content of yout jks keystore
 
