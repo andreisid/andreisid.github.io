@@ -64,6 +64,6 @@ excerpt: "Docker quick reference"
 <tr><td>docker-enter <container_id> </td><td>Get shell to a running container</td></tr>
 <tr><td>docker exec -it ffb718704ed0 /bin/bash </td><td>Recommended method to get shell inside acontainer</td></tr>
 <tr><td>docker run -v /usr/local/bin:/target jpetazzo/nsenter </td><td>Get the nsenter command if missing from your host</td></tr>
-<tr><td> </td><td></td></tr>
+<tr><td>docker logs <container_id> </td><td>Shows output of PID 1 on container</td></tr>
 </tbody>
 </table>
