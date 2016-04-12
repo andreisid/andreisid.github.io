@@ -16,6 +16,7 @@ excerpt: "Docker quick reference"
 
 <tr><td>docker pull ubuntu</td><td>  Download prebuilt image</td></tr>
 <tr><td>docker pull centos:5</td><td>  Download centos 5 version</td></tr>
+<tr><td>docker pull centos -a</td><td>  Download all centos versions</td></tr>
 <tr><td>docker run -i -t ubuntu /bin/bash </td><td> run in interactive mode</td></tr>
 <tr><td>docker run centos:7 /usr/bin/echo hello </td><td> Run container and echo</td></tr>
 <tr><td>docker run --net bridge -ti centos6/httpd </td><td> Run the run the container in specific network</td></tr>
@@ -49,5 +50,12 @@ excerpt: "Docker quick reference"
 <tr><td>docker stop <id>	 </td><td> Stops running container</td></tr>
 <tr><td>docker search <id>	 </td><td> Dearch images</td></tr>
 <tr><td>docker top <id>	 </td><td> What command is running in the container</td></tr>
+<tr><td>docker info  </td><td>Information about current docker settings </td></tr>
+<tr><td>usermod -G docker <user>      </td><td>Add your user to docker group to run docker without sudo </td></tr>
+<tr><td>docker -H 192.168.0.2 -d &    </td><td>Run docker in network mode and not use local socket (/run/docker.sock) </td></tr>
+<tr><td>export DOCKER_HOST="tcp://192.168.0.2:2375"   </td><td>To use docker over network </td></tr>
+<tr><td>docker -H 192.168.0.2 -H UNIX:///var/run/docker.sock -d &     </td><td>Bind docker service to both the local socket and network </td></tr>
+<tr><td>/var/lib/docker/aufs/diff/    </td><td>Location of container data even after container stopped </td></tr>
+<tr><td>/var/lib/docker/containers    </td><td>Location of container configurations </td></tr>
 </tbody>
 </table>
