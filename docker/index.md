@@ -57,5 +57,13 @@ excerpt: "Docker quick reference"
 <tr><td>docker -H 192.168.0.2 -H UNIX:///var/run/docker.sock -d &     </td><td>Bind docker service to both the local socket and network </td></tr>
 <tr><td>/var/lib/docker/aufs/diff/    </td><td>Location of container data even after container stopped </td></tr>
 <tr><td>/var/lib/docker/containers    </td><td>Location of container configurations </td></tr>
+<tr><td>docker commit <container_id> <image_name> </td><td>Save an image from running container</td></tr>
+<tr><td>docker history <image_id> </td><td>shows history of an image</td></tr>
+<tr><td>docker inspect <container_id>|grep Pid </td><td>Get the pid of the container</td></tr>
+<tr><td>nsenter -m -u -n -p -i -t <Pid> </td><td>Get shell to the container with <Pid></td></tr>
+<tr><td>docker-enter <container_id> </td><td>Get shell to a running container</td></tr>
+<tr><td>docker exec -it ffb718704ed0 /bin/bash </td><td>Recommended method to get shell inside acontainer</td></tr>
+<tr><td>docker run -v /usr/local/bin:/target jpetazzo/nsenter </td><td>Get the nsenter command if missing from your host</td></tr>
+<tr><td> </td><td></td></tr>
 </tbody>
 </table>
