@@ -3,6 +3,8 @@ layout: page
 title: Docker quickreference
 excerpt: "Docker quick reference"
 ---
+{% include _toc.html %}
+
 <style type="text/css">
 .tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
 .tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
@@ -10,6 +12,32 @@ excerpt: "Docker quick reference"
 .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
 .tftable tr:hover {background-color:#ffffff;}
 </style>
+
+### 1. Dockerfile
+
+***FROM*** - Select base image
+
+***MAINTAINER*** - details about the author
+
+***ADD*** - Adds files from host to container
+
+***RUN*** - Run commands at build time. CMD will be overwritten by the command specified when running the container
+
+***CMD*** - Run ocommand at runtime. Only one command is run, if specified more than one, the last command will overwrite the others
+
+***VOLUME*** - Adds a volume to the container. You can't specify the host folder to be munted in a Dockerfile
+
+***ENTRYPOINT***- Like CMD, with 2 differences. You can't overwrite it when running the conainer. Averything thet is passed at the end of a docker run command will be used as an argument for the ENTRYPOINT command
+
+***ENV*** - Set a environment variable in the container. Also you can use it as a variable in the Docker file
+
+**Note**: Each entry of the above types in a Dockerfile will be an 
+	intermediate docker image. Use ase few entries as possible by 
+	using "&& \" at the end of the line.
+~                      
+
+### 2.Docker commands
+
 <table class="tftable" border="1">
 <tbody>
 <tr><th>Command</th><th>Description</th></tr>
@@ -66,4 +94,3 @@ excerpt: "Docker quick reference"
 <tr><td>docker run -v /usr/local/bin:/target jpetazzo/nsenter </td><td>Get the nsenter command if missing from your host</td></tr>
 <tr><td>docker logs <container_id> </td><td>Shows output of PID 1 on container</td></tr>
 </tbody>
-</table>
