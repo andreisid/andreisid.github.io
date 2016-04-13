@@ -93,4 +93,9 @@ excerpt: "Docker quick reference"
 <tr><td>docker exec -it ffb718704ed0 /bin/bash </td><td>Recommended method to get shell inside acontainer</td></tr>
 <tr><td>docker run -v /usr/local/bin:/target jpetazzo/nsenter </td><td>Get the nsenter command if missing from your host</td></tr>
 <tr><td>docker logs <container_id> </td><td>Shows output of PID 1 on container</td></tr>
+<tr><td>docker tag <image_id> username/imagename:version </td><td>Set different tag for image before pushing to hub</td></tr>
+<tr><td>docker push username/imagename:1.0 </td><td>Push image to hub</td></tr>
+<tr><td>docker run -it --volumes-from=<container_name> centos:6 /bin/bash </td><td>Share a volume with an existing container</td></tr>
+<tr><td>docker -v rm <container_id>  </td><td>Remove container and the volume. Without -v the volume is not deleted</td></tr>
+<tr><td>docker logs -f <container_id> </td><td>Sows logs for PID 1 in tail -f form</td></tr>
 </tbody>
