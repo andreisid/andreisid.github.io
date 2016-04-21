@@ -46,8 +46,7 @@ excerpt: "Docker quick reference"
 
 
 **Note**: Each entry of the above types in a Dockerfile will be an 
-	intermediate docker image. Use ase few entries as possible by 
-	using "&& \" at the end of the line.
+	intermediate docker image. Use as few entries as possible with "&& \" at the end of the line.
 
 Use [this link](https://docs.docker.com/engine/reference/builder/) for a full Dockerfile reference.
 
