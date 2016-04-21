@@ -31,10 +31,15 @@ excerpt: "Docker quick reference"
 
 ***ENV*** - Set a environment variable in the container. Also you can use it as a variable in the Docker file
 
+***WORKDIR*** - Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it in the Dockerfile. If the WORKDIR doesn’t exist, it will be created.
+
+***LABEL*** - Used to set metadata on an image. version,description,etc.. LABEL <key>=<value> <key>=<value> 
+
 **Note**: Each entry of the above types in a Dockerfile will be an 
 	intermediate docker image. Use ase few entries as possible by 
 	using "&& \" at the end of the line.
-~                      
+
+Use [this link](https://docs.docker.com/engine/reference/builder/) for a full Dockerfile reference.
 
 ### 2.Docker commands
 
