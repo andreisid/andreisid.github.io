@@ -43,6 +43,8 @@ excerpt: "Docker quick reference"
 
 ***ARG*** - Defines a variable that users can pass at build-time to the builder with: docker build --build-arg varname=value. Use it in Dokerfile with USER command like this: USER ${user:-some_user} 
 
+
+
 **Note**: Each entry of the above types in a Dockerfile will be an 
 	intermediate docker image. Use ase few entries as possible by 
 	using "&& \" at the end of the line.
