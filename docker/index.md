@@ -33,7 +33,7 @@ excerpt: "Docker quick reference"
 
 ***WORKDIR*** - Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it in the Dockerfile. If the WORKDIR doesn’t exist, it will be created.
 
-***LABEL*** - Used to set metadata on an image. version,description,etc.. LABEL <key>=<value> <key>=<value> 
+***LABEL*** - Used to set metadata on an image. version,description,etc.. LABEL key=value 
 
 **Note**: Each entry of the above types in a Dockerfile will be an 
 	intermediate docker image. Use ase few entries as possible by 
