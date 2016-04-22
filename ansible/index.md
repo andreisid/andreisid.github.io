@@ -3,7 +3,7 @@ layout: page
 title: Ansible quickreference
 excerpt: "Python quick reference"
 ---
-> Note: ansible.cfg will be read in order from the following locations: ANSIBLE_CONFIG env variable, current dir, home_dir/.ansible.cfg, /etc/ansible/ansible.cfg</td></tr>
+> Note: ansible.cfg will be read in order from the following locations: ANSIBLE_CONFIG env variable, current dir, home_dir/.ansible.cfg, /etc/ansible/ansible.cfg
 
 <style type="text/css">
 .tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
