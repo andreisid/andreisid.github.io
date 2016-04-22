@@ -15,33 +15,33 @@ excerpt: "Docker quick reference"
 
 ### 1. Dockerfile
 
-***FROM*** - Select base image
++ ***FROM*** - Select base image
 
-***MAINTAINER*** - details about the author
++ ***MAINTAINER*** - details about the author
 
-***ADD*** - Adds files from host to container. Can be used to copy files from URL to container. 
++ ***ADD*** - Adds files from host to container. Can be used to copy files from URL to container. 
 
-***RUN*** - Run commands at build time. CMD will be overwritten by the command specified when running the container
++ ***RUN*** - Run commands at build time. CMD will be overwritten by the command specified when running the container
 
-***CMD*** - Run ocommand at runtime. Only one command is run, if specified more than one, the last command will overwrite the others
++ ***CMD*** - Run ocommand at runtime. Only one command is run, if specified more than one, the last command will overwrite the others
 
-***VOLUME*** - Adds a volume to the container. You can't specify the host folder to be munted in a Dockerfile
++ ***VOLUME*** - Adds a volume to the container. You can't specify the host folder to be munted in a Dockerfile
 
-***ENTRYPOINT***- Like CMD, with 2 differences. You can't overwrite it when running the conainer. Averything thet is passed at the end of a docker run command will be used as an argument for the ENTRYPOINT command
++ ***ENTRYPOINT***- Like CMD, with 2 differences. You can't overwrite it when running the conainer. Averything thet is passed at the end of a docker run command will be used as an argument for the ENTRYPOINT command
 
-***ENV*** - Set a environment variable in the container. Also you can use it as a variable in the Docker file
++ ***ENV*** - Set a environment variable in the container. Also you can use it as a variable in the Docker file
 
-***WORKDIR*** - Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it in the Dockerfile. If the WORKDIR doesn’t exist, it will be created.
++ ***WORKDIR*** - Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it in the Dockerfile. If the WORKDIR doesn’t exist, it will be created.
 
-***LABEL*** - Used to set metadata on an image. version,description,etc.. LABEL key=value 
++ ***LABEL*** - Used to set metadata on an image. version,description,etc.. LABEL key=value 
 
-***EXPOSE*** I informs Docker that the container listens on the specified network ports at runtime.
++ ***EXPOSE*** I informs Docker that the container listens on the specified network ports at runtime.
 
-***COPY*** - Copies new files or directories from src to dest on the container
++ ***COPY*** - Copies new files or directories from src to dest on the container
 
-***USER*** - Sets the user name or UID to use when running the image and for any RUN, CMD and ENTRYPOINT cmmands
++ ***USER*** - Sets the user name or UID to use when running the image and for any RUN, CMD and ENTRYPOINT cmmands
 
-***ARG*** - Defines a variable that users can pass at build-time to the builder with: docker build --build-arg varname=value. Use it in Dokerfile with USER command like this: USER ${user:-some_user} 
++ ***ARG*** - Defines a variable that users can pass at build-time to the builder with: docker build --build-arg varname=value. Use it in Dokerfile with USER command like this: USER ${user:-some_user} 
 
 
 
