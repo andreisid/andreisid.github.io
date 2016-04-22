@@ -36,8 +36,8 @@ excerpt: "VI Tips"
 <tr><td>CTRL+R</td><td>Redo</td></tr>
 <tr><td>:set paste</td><td>Set mode for pasting</td></tr>
 <tr><td>SHIFT + D</td><td>Delete from cursor to end of line</td></tr>
-<tr>:1,10d<td></td><td>Delete from line 1 to 10</td></tr>
-<tr>:1,$d<td></td><td>Delete all lines</td></tr>
+<tr><td>:1,10d</td><td>Delete from line 1 to 10</td></tr>
+<tr><td>:1,$d</td><td>Delete all lines</td></tr>
 <tr><td>:%d</td><td>Delete all lines</td></tr>
 </tbody>
 </table>
@@ -49,5 +49,5 @@ excerpt: "VI Tips"
 <tr><th>Command</th><th>Description</th></tr>
 <tr><td>:set tabstop=4</td><td>One tab=4 spaces</td></tr>
 <tr><td>:set expandtab</td><td>Insert space even if pressed tab</td></tr>
-<tr><td>:syntax on	</td><td>Syntax highlight</td></tr>
+<tr><td>:syntax on</td><td>Syntax highlight</td></tr>
 </tbody></table>
