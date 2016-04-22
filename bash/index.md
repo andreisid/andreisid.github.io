@@ -37,7 +37,7 @@ excerpt: "Bash commands"
 <tr><td>dig NS www.domain.com</td><td>Find nameservers for a certain domain</td></tr>
 <tr><td>dig -x <ip></td><td>Reverse DNS search for an ip </td></tr>
 <tr><td>tcpdump -nn port 53 -c 100</td><td>Exit exit after first 100 captures disable name and port resolution</td></tr>
-<tr>dig @<nameserver> <domain> +norecurse<td></td><td>Get a non cached response from an authoritive DNS Server</td></tr>
+<tr><td>dig @<nameserver> <domain> +norecurse</td><td>Get a non cached response from an authoritive DNS Server</td></tr>
 <tr><td>dig <domain> +trace</td><td>Traceroute for DNS queries</td></tr>
 
 <ttbody></table>
