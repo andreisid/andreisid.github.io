@@ -34,13 +34,13 @@ excerpt: "Python quick reference"
 <tr><td>ansible <host> -s -K -m yum  -a 'pkg=links state=installed update_cache=true'</td><td>Install package </td></tr>
 
 
-<tr><td>ansible test -u root -m service -a "name=httpd state=restarted"	</td><td> restart a service</td></tr> 
-<tr><td>ansible test:test1 -u root -m service -a "name=httpd state=started"	</td><td> run on both test and test1 groups</td></tr>
-<tr><td>ansible test:!test1 -u root -m service -a "name=httpd state=started" </td><td> run on all vms that are in test but not in test1</td></tr>
-<tr><td>ansible test[0] -u root -m service -a "name=httpd state=started" </td><td> run on first host of the group </td></tr>
+<tr><td>ansible test -u root -m service -a "name=httpd state=restarted"	</td><td>Restart a service</td></tr> 
+<tr><td>ansible test:test1 -u root -m service -a "name=httpd state=started"	</td><td>Run on both test and test1 groups</td></tr>
+<tr><td>ansible test:!test1 -u root -m service -a "name=httpd state=started" </td><td>Run on all vms that are in test but not in test1</td></tr>
+<tr><td>ansible test[0] -u root -m service -a "name=httpd state=started" </td><td>Run on first host of the group </td></tr>
 
-<tr><td>ansible test -m setup -u root	 </td><td> get current config of vms in test</td></tr>
+<tr><td>ansible test -m setup -u root	 </td><td>Get current config of vms in test</td></tr>
 
-<tr><td>ansible <group> -m command -a "/etc/init.d/tomcat7 status" --ask-pass</td><td> get status of process on group of servers</td></tr>
+<tr><td>ansible <group> -m command -a "/etc/init.d/tomcat7 status" --ask-pass</td><td>Get status of process on group of servers</td></tr>
 </tbody>
 </table>
