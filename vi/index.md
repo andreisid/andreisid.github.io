@@ -31,11 +31,14 @@ excerpt: "VI Tips"
 <tr><td>SHIFT + C</td><td>Remove the line and start editing from the beginning</td></tr>
 <tr><td>dw</td><td>Delete word</td></tr>
 <tr><td>2dw</td><td>Delete 2 words</td></tr>
-<tr><td>V</td><td>visual mode. e and b select text. c change word, y copy, p paste</td></tr>
+<tr><td>V</td><td>Visual mode. e and b select text. c change word, y copy, p paste</td></tr>
 <tr><td>U</td><td>Undo</td></tr>
 <tr><td>CTRL+R</td><td>Redo</td></tr>
 <tr><td>:set paste</td><td>Set mode for pasting</td></tr>
-<tr><td>SHIFT + D</td><td>delete from cursor to end of line</td></tr>
+<tr><td>SHIFT + D</td><td>Delete from cursor to end of line</td></tr>
+<tr>:1,10d<td></td><td>Delete from line 1 to 10</td></tr>
+<tr>:1,$d<td></td><td>Delete all lines</td></tr>
+<tr><td>:%d</td><td>Delete all lines</td></tr>
 </tbody>
 </table>
 
@@ -44,6 +47,7 @@ excerpt: "VI Tips"
 <table class="tftable" border="1">
 <tbody>
 <tr><th>Command</th><th>Description</th></tr>
-<tr><td>:set tabstop=4</td><td>#one tab=4 spaces</td></tr>
-<tr><td>:set expandtab</td><td>#insert space even if pressed tab</td></tr>
+<tr><td>:set tabstop=4</td><td>One tab=4 spaces</td></tr>
+<tr><td>:set expandtab</td><td>Insert space even if pressed tab</td></tr>
+<tr><td>:syntax on	</td><td>Syntax highlight</td></tr>
 </tbody></table>
