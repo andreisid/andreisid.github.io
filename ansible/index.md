@@ -21,6 +21,7 @@ excerpt: "Python quick reference"
 <tr><td></td><td></td></tr>
 <tr><td></td><td></td></tr>
 <tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
 
 <tr><td>ansible test -u root -m service -a "name=httpd state=restarted"	</td><td> restart a service</td></tr> 
 <tr><td>ansible test:test1 -u root -m service -a "name=httpd state=started"	</td><td> run on both test and test1 groups</td></tr>
