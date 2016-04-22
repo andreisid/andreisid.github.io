@@ -16,7 +16,7 @@ excerpt: "VI Tips"
 <tr><td>/</td><td>Search.n for next, N for previous</td></tr>
 <tr><td>?</td><td>Search backwards</td></tr>
 <tr><td>:%s/OLD/NEW/g</td><td>Replace all OLD with NEW</td></tr>
-<tr><td>dgg</td>><td>Removes all lines</td></tr>
+<tr><td>dgg</td><td>Removes all lines</td></tr>
 <tr><td>:set ic</td><td>set case insesitive for search</td></tr>
 <tr><td>:set ft=ruby</td><td>set syntax highlight for ruby</td></tr>
 <tr><td>e</td><td>Go to end of the word</td></tr>
