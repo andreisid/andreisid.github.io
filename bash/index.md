@@ -30,5 +30,14 @@ excerpt: "Bash commands"
 <tr><td>crtl+a	</td><td>Go to begining of the line</td></tr>
 <tr><td>crtl+e	</td><td>Go to end of the line</td></tr>
 <tr><td>lsof -i -Pn	</td><td>Listening and established connections</td></tr>
+<tr><td>ps -eLf</td><td>List running threads</td></tr>
+<tr><td>top + 'H'</td><td>List running threads</td></tr>
+<tr><td>lscpu</td><td>Processor details. threads/core</td></tr>
+<tr><td>yum list installed</td><td>Shows installed packages. Like rpm -qa. Also shows repository that was used</td></tr>
+<tr><td>dig NS www.domain.com</td><td>Find nameservers for a certain domain</td></tr>
+<tr><td>dig -x <ip></td><td>Reverse DNS search for an ip </td></tr>
+<tr><td>tcpdump -nn port 53 -c 100</td><td>Exit exit after first 100 captures disable name and port resolution</td></tr>
+<tr>dig @<nameserver> <domain> +norecurse<td></td><td>Get a non cached response from an authoritive DNS Server</td></tr>
+<tr><td>dig <domain> +trace</td><td>Traceroute for DNS queries</td></tr>
 
 <ttbody></table>
