@@ -50,4 +50,5 @@ excerpt: "VI Tips"
 <tr><td>:set tabstop=4</td><td>One tab=4 spaces</td></tr>
 <tr><td>:set expandtab</td><td>Insert space even if pressed tab</td></tr>
 <tr><td>:syntax on</td><td>Syntax highlight</td></tr>
+<tr><td>:set nowrap</td><td>Do not wrap lines</td></tr>
 </tbody></table>
