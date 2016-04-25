@@ -91,7 +91,7 @@ openssl x509 -inform der -in <certificate.cer> -out certificate.pem
 
 ### 1.Generate a PEM cert and key
 
-    This can be used when enabling ssl on Apache or any other webserver
+NOTE: This can be used when enabling ssl on Apache or any other webserver.
     
 {% highlight bash %}
 openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
