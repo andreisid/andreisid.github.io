@@ -89,7 +89,7 @@ openssl x509 -inform der -in <certificate.cer> -out certificate.pem
 
 # Generate certificates
 
-### Generate a PEM cert and key
+### 1.Generate a PEM cert and key
 
     This can be used when enabling ssl on Apache or any other webserver
     
