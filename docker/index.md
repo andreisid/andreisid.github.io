@@ -114,4 +114,6 @@ excerpt: "Docker quick reference"
 <tr><td>docker run -it --volumes-from=<container_name> centos:6 /bin/bash </td><td>Share a volume with an existing container</td></tr>
 <tr><td>docker -v rm <container_id>  </td><td>Remove container and the volume. Without -v the volume is not deleted</td></tr>
 <tr><td>docker logs -f <container_id> </td><td>Sows logs for PID 1 in tail -f form</td></tr>
+<tr><td>docker kill $(docker ps|grep -v "CONTAINER"|awk '{print $1}'|head -1)</td><td>Kill last opened container</td></tr>
+<tr><td>docker exec -it $(docker ps|grep -v "CONTAINER"|awk '{print $1}'|head -1) /bin/sh</td><td>Enter last opened container</td></tr>
 </tbody>
