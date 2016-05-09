@@ -116,4 +116,10 @@ excerpt: "Docker quick reference"
 <tr><td>docker logs -f <container_id> </td><td>Sows logs for PID 1 in tail -f form</td></tr>
 <tr><td>docker kill $(docker ps|grep -v "CONTAINER"|awk '{print $1}'|head -1)</td><td>Kill last opened container</td></tr>
 <tr><td>docker exec -it $(docker ps|grep -v "CONTAINER"|awk '{print $1}'|head -1) /bin/sh</td><td>Enter last opened container</td></tr>
+<tr><td>docker rmi $(docker images | grep "^<none>" | awk "{print $3}")</td><td>Remove docker images without tag</td></tr>
+<tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
+<tr><td></td><td></td></tr>
 </tbody>
