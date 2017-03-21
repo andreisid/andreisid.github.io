@@ -2,8 +2,8 @@
 
 title:            devopsjournal.org
 locale:           en_US
-#url:              https://devopsjournal.org
-url:              https://andreisid.github.io
+url:              https://devopsjournal.org
+#url:              https://andreisid.github.io
 
 
 # Jekyll configuration
